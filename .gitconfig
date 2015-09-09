@@ -1,0 +1,36 @@
+[user]
+    name  = Kory Kirk
+    email = kory.kirk@gmail.com
+[alias]
+    st   = status
+    co   = checkout
+    ci   = commit
+    br   = branch
+    brls = branch --all
+    di   = diff
+    cp   = cherry-pick
+    am   = commit --amend
+    bmd  = !sh -c 'git diff `git merge-base master $0` $0'
+    mnff = merge --no-ff
+    cl   = clone
+    diff = diff --word-diff
+    dc   = diff --cached
+
+    hist = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate
+    ls   = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate
+    ll   = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --numstat
+    lds  = log --pretty=format:"%C(yellow)%h\\ %ad%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --date=short
+    ld   = log --pretty=format:"%C(yellow)%h\\ %ad%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --date=relative
+    lm   = log --simplify-merges --topo-order
+    nm   = log --no-merges --topo-order
+    nms  = log --no-merges --topo-order --stat
+    tree = log --oneline --decorate --all --graph
+[color]
+    ui     = auto
+    status = auto
+    branch = auto
+    diff   = auto
+    blame  = auto
+[core]
+    editor = vim
+    filemode = false
